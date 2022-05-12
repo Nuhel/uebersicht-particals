@@ -9,15 +9,18 @@ style: `
     
     justify-content: center;
     align-items: center;
+    pointer-events: none;
     #particles-js {
         position:fixed;
         width:100%;
         height:100%;
         left:0;
         top:0;
+        pointer-events: none;
     }
 
     #time-wraper{
+        pointer-events: none;
         width: 100%;
         text-align: center;
         height: 100vh;
@@ -204,8 +207,6 @@ suffix: function(date){
 update: function(output,domEl){
 
     dateInfo = output.split(',')
-
-    console.log(dateInfo);
       day = dateInfo[0]
       month = dateInfo[1]
       numDate = parseInt(dateInfo[2])
